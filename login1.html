@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>admin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbBpYQBYymx9jYj6fiArun0ONLm7_S40FYYg&s');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .home {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      border: 1px solid black;
+      background-color: gray;
+      opacity: 0.5;
+      padding: 10px;
+    }
+    .home a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+    .home .logout {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+    .home .fa-star {
+      color: gold;
+      margin-right: 10px;
+    }
+    .two {
+      color: black;
+      text-align: center;
+      background-color: rgba(128, 128, 128, 0.514);
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: 0px 0px 5px rgb(0, 0, 0);
+      margin: 30px auto;
+      width: 80%;
+      max-width: 800px;
+    }
+    .heading {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    q {
+      display: block;
+      margin: 10px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .home {
+        flex-direction: column;
+        align-items: center;
+      }
+      .home a {
+        margin: 10px 0;
+      }
+      .home .logout {
+        margin-left: 0;
+        justify-content: center;
+      }
+      .two {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="home">
+    <a href="login1.html">Recruitment System</a>
+    <div class="logout">
+      <i class="fa-solid fa-right-from-bracket"></i>
+      <a href="index.html" onclick="alert('logout successful')">Logout</a>
+    </div>
+  </div>
+
+  <div class="two">
+    <span class="heading">Administrator Account</span>
+    <q>
+      <strong>
+        You can login with admin username and password
+      </strong>
+    </q>
+    
+  </div>
+  <body id="body">
+    <div class="container-fluid d-flex justify-content-center mt-5"  >
+        <form name="loginForm" action="index.html"  style="width: 400px;border: 1px solid black;border-radius: 10px; background-color: rgba(0, 0, 0, 0.1);margin-top: 50px;margin-left: 500px;padding: 20px;" class="m-5 p-5 ">
+            <div>
+                <label for="email" class="form-label" style="color: blue;">username</label>
+                <input name="email" type="email" class="form-control" style=" background-color:rgb(0, 0, 0, 0.2);border: 1px solid black;" required>
+            </div>
+            <div>
+                <label for="password" class="form-label" style="color: blue;">Password</label>
+                <input name="password" type="password" class="form-control" style="  background-color:rgb(0, 0, 0, 0.2);border: 1px solid black; " required>
+            </div>
+            
+            <div class="d-flex justify-content-center mt-3 pt-5">
+                <button class="btn btn-light" type="login" onclick="alert('login successful')"><a href="index.html" style=" color: blue; text-decoration: none;font-size: 20px;">login</a></button>
+            </div>
+      
+        </form>
+    </div>
+</body>
+</html>
